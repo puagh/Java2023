@@ -1,4 +1,4 @@
-public class Primitivos {
+public class PrimitivosEnteros {
     public static void main(String[] args) {
         byte numeroByte = (byte) 127;
         System.out.println("numeroByte = " + numeroByte);
