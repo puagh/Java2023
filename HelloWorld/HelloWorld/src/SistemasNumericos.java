@@ -13,11 +13,8 @@ public class SistemasNumericos {
             System.exit(0);
         }
 
-
         String mensajeDecimal = "numeroDecimal = " + numeroDecimal;
         System.out.println(mensajeDecimal);
-
-
 
         String resultadoBinario = "convertido en binario = " + Integer.toBinaryString(numeroDecimal);
         System.out.println("convertido en binario = " + resultadoBinario);
