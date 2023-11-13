@@ -30,19 +30,19 @@ public class Hw2_CalcularEdad {
             calendarioFechaActual.setTime(fechaActual);
             short cumple = 0;
 
+            int anios_cumplidos = calendarioFechaActual.get(Calendar.YEAR) - calendarioFechaNacimiento.get(Calendar.YEAR);
+
             // Verificar si ya cumplio anios este anio
             if(calendarioFechaActual.get(Calendar.MONTH) <= calendarioFechaNacimiento.get(Calendar.MONTH)) {
-                if(calendarioFechaActual.get(Calendar.DAY_OF_MONTH) > calendarioFechaNacimiento.get(Calendar.DAY_OF_MONTH)){
+                if(calendarioFechaActual.get(Calendar.DAY_OF_MONTH) > calendarioFechaNacimiento.get(Calendar.DAY_OF_MONTH) && anios_cumplidos != 0){
                     cumple = -1;
                 }
             }
-            System.out.println("Anios cumplidos = " + (calendarioFechaActual.get(Calendar.YEAR) - calendarioFechaNacimiento.get(Calendar.YEAR) + cumple));
+            System.out.println("Anios cumplidos = " + anios_cumplidos);
 
 
             System.out.println("fechaActual = " + fechaActual);
-            if(fechaNacimiento.after(fechaActual)){
 
-            }
 
         } catch (ParseException e) {
             throw new RuntimeException(e);
