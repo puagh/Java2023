@@ -8,12 +8,13 @@ public class EjemploJavaUtilCalendar {
         int diasSumados = 20;
         //calendario.set(2023, 10, (8 + diasSumados), 12, 30, 19);
 
-        calendario.set(Calendar.YEAR, 1989);
-        calendario.set(Calendar.MONTH, Calendar.NOVEMBER);
-        calendario.set(Calendar.DAY_OF_MONTH, 8);
-        calendario.set(Calendar.HOUR_OF_DAY, 23);
-        calendario.set(Calendar.MINUTE, 5);
-        calendario.set(Calendar.SECOND, 12);
+        calendario.set(Calendar.YEAR, 2024);
+        calendario.set(Calendar.MONTH, Calendar.JANUARY);
+        calendario.set(Calendar.DAY_OF_MONTH, 3);
+        calendario.set(Calendar.HOUR_OF_DAY, 12);
+        calendario.set(Calendar.MINUTE, 00);
+        calendario.set(Calendar.SECOND, 00);
+        calendario.set(Calendar.MILLISECOND, 000);
 
         Date fecha = calendario.getTime();
         System.out.println("Fecha limite de pago = " + fecha);
