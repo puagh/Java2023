@@ -1,3 +1,5 @@
+import java.util.Properties;
+
 public class EjemploPropiedadesDeSistema {
     public static void main(String[] args) {
 
@@ -12,5 +14,8 @@ public class EjemploPropiedadesDeSistema {
 
         String versionJava = System.getProperty("java.version");
         System.out.println("versionJava = " + versionJava);
+
+        Properties p = System.getProperties();
+        p.list(System.out);
     }
 }
