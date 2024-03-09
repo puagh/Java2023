@@ -18,12 +18,6 @@ public class ArgumentoLineaComandoCalculadora {
             System.exit(1);
         }
 
-
-
-
-
-
-
         switch (operacion){
             case "suma":
                 resultado = a + b;
